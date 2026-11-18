@@ -135,7 +135,7 @@
       if (m.name === 'botones') m.pbrMetallicRoughness.setBaseColorFactor(c.map(function (v, i) { return i < 3 ? v * 0.72 : 1; }));
     });
   }
-  function cargar() { if (mv) mv.src = BASE + 'benza/benza_' + W + 'x' + P + '.glb'; }
+  function cargar() { if (mv) mv.src = BASE + 'benza_' + W + 'x' + P + '.glb'; }
   function elegirColor(c) {
     color = c[1]; $('pb3dN').textContent = linea.n + ' · ' + c[0];
     [].forEach.call($('pb3dC').children, function (x) { x.setAttribute('aria-pressed', x.getAttribute('data-c') === c[1] ? 'true' : 'false'); });
